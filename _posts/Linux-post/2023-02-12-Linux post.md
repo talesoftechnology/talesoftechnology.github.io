@@ -1,7 +1,7 @@
 ---
 title: Second demo post
 date: 2023-02-12 
-categories: [author, Verlaine]
+categories: [author, Herald]
 tags: [linux,apis]
 ---
 

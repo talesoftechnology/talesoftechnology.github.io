@@ -1,7 +1,7 @@
 ---
 title: Our first demo post
 date: 2023-02-12 
-categories: [author, Herald]
+categories: [author, Verlaine]
 tags: [linux,python,networking,netdevops,apis]
 ---
 
