@@ -1,8 +1,9 @@
 ---
 title: Our first demo post
 date: 2023-02-12 
-categories: [author, Verlaine]
+categories: [netdevops,python,demo]
 tags: [linux,python,networking,netdevops,apis]
+author: verlaine
 ---
 
 # This is our first post
