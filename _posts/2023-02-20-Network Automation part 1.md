@@ -190,7 +190,7 @@ print(website_name[0:5])
     
 
 To split the string by white space run `website_name.split(" ")`
-![image.png](attachment:24014ca9-f02b-4525-bb29-0526233ae341.png)
+![image.png](attachment:24014ca9-f02b-4525-bb29-052623ae341.png)
 
 
 ```python
