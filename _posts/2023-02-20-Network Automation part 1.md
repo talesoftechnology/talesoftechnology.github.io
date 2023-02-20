@@ -5,8 +5,6 @@ categories: [networkautomation, python, herald]
 tags: [netdevops,python,netmiko,networkautomation]
 author: Herald
 ---
-
-# Network Automation - How it all started
 ## lighter way of learning python network automation
 
 ### <ins> The tale </ins>
@@ -41,8 +39,10 @@ from netmiko import ConnectHandler
 sandbox_connection = ConnectHandler(device_type = "cisco_ios", host = "sandbox-iosxe-latest-1.cisco.com", username = "developer", password = "C1sco12345")
 print(sandbox_connection.find_prompt())
 ```
-
-    csr1000v-1#
+output :
+```
+csr1000v-1#
+```
     
 
 In the code above, We are importing a chunk of code called `ConnectHandler` from netmiko module, This is called class in programming. We use `ConnectHandler` with all the needed parameters packed in between braces `()` to establish connection. Here `sandbox_connection` is an object name which is a label of the
@@ -56,20 +56,22 @@ from netmiko import ConnectHandler
 sandbox_connection = ConnectHandler(device_type = "cisco_ios", host = "sandbox-iosxe-latest-1.cisco.com", username = "developer", password = "C1sco12345")
 print(sandbox_connection.send_command("show ip int brief"))
 ```
-
-    Interface              IP-Address      OK? Method Status                Protocol
-    GigabitEthernet1       10.10.20.48     YES NVRAM  up                    up      
-    GigabitEthernet2       unassigned      YES unset  administratively down down    
-    GigabitEthernet3       unassigned      YES NVRAM  administratively down down    
-    Loopback56             56.56.56.56     YES manual up                    up      
-    Loopback82             unassigned      YES unset  up                    up      
-    Loopback84             75.74.74.78     YES manual up                    up      
-    Loopback85             unassigned      YES unset  up                    up      
-    Loopback88             unassigned      YES unset  up                    up      
-    Loopback100            172.16.100.100  YES other  up                    up      
-    Loopback123            unassigned      YES unset  up                    up      
-    Loopback999            unassigned      YES unset  up                    up      
-    Loopback1000           1.1.1.1         YES manual up                    up      
+output:
+```
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet1       10.10.20.48     YES NVRAM  up                    up      
+GigabitEthernet2       unassigned      YES unset  administratively down down    
+GigabitEthernet3       unassigned      YES NVRAM  administratively down down    
+Loopback56             56.56.56.56     YES manual up                    up      
+Loopback82             unassigned      YES unset  up                    up      
+Loopback84             75.74.74.78     YES manual up                    up      
+Loopback85             unassigned      YES unset  up                    up      
+Loopback88             unassigned      YES unset  up                    up      
+Loopback100            172.16.100.100  YES other  up                    up      
+Loopback123            unassigned      YES unset  up                    up      
+Loopback999            unassigned      YES unset  up                    up      
+Loopback1000           1.1.1.1         YES manual up                    up 
+```     
     
 
 It is getting interesting right? 
@@ -81,124 +83,122 @@ from netmiko import ConnectHandler
 sandbox_connection = ConnectHandler(device_type = "cisco_ios", host = "sandbox-iosxe-latest-1.cisco.com", username = "developer", password = "C1sco12345")
 print(sandbox_connection.send_command("show interface GigabitEthernet1"))
 ```
-
-    GigabitEthernet1 is up, line protocol is up 
-      Hardware is CSR vNIC, address is 0050.56bf.78ac (bia 0050.56bf.78ac)
-      Description: MANAGEMENT INTERFACE - DON'T TOUCH ME
-      Internet address is 10.10.20.48/24
-      MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec, 
-         reliability 255/255, txload 1/255, rxload 1/255
-      Encapsulation ARPA, loopback not set
-      Keepalive set (10 sec)
-      Full Duplex, 1000Mbps, link type is auto, media type is Virtual
-      output flow-control is unsupported, input flow-control is unsupported
-      ARP type: ARPA, ARP Timeout 04:00:00
-      Last input 00:00:00, output 00:00:00, output hang never
-      Last clearing of "show interface" counters never
-      Input queue: 0/375/0/0 (size/max/drops/flushes); Total output drops: 2746
-      Queueing strategy: fifo
-      Output queue: 0/40 (size/max)
-      5 minute input rate 3000 bits/sec, 2 packets/sec
-      5 minute output rate 2000 bits/sec, 2 packets/sec
-         44902 packets input, 6516293 bytes, 0 no buffer
-         Received 0 broadcasts (0 IP multicasts)
-         0 runts, 0 giants, 0 throttles 
-         0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-         0 watchdog, 0 multicast, 0 pause input
-         41188 packets output, 17832827 bytes, 0 underruns
-         Output 0 broadcasts (0 IP multicasts)
-         0 output errors, 0 collisions, 0 interface resets
-         0 unknown protocol drops
-         0 babbles, 0 late collision, 0 deferred
-         0 lost carrier, 0 no carrier, 0 pause output
-         0 output buffer failures, 0 output buffers swapped out
-    
-
-![image.png](attachment:3c15dc59-0ed3-484d-9928-cf3781684ee6.png)
+output:
+```
+GigabitEthernet1 is up, line protocol is up 
+Hardware is CSR vNIC, address is 0050.56bf.78ac (bia 0050.56bf.78ac)
+Description: MANAGEMENT INTERFACE - DON'T TOUCH ME
+Internet address is 10.10.20.48/24
+MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec, 
+    reliability 255/255, txload 1/255, rxload 1/255
+Encapsulation ARPA, loopback not set
+Keepalive set (10 sec)
+Full Duplex, 1000Mbps, link type is auto, media type is Virtual
+output flow-control is unsupported, input flow-control is unsupported
+ARP type: ARPA, ARP Timeout 04:00:00
+Last input 00:00:00, output 00:00:00, output hang never
+Last clearing of "show interface" counters never
+Input queue: 0/375/0/0 (size/max/drops/flushes); Total output drops: 2746
+Queueing strategy: fifo
+Output queue: 0/40 (size/max)
+5 minute input rate 3000 bits/sec, 2 packets/sec
+5 minute output rate 2000 bits/sec, 2 packets/sec
+    44902 packets input, 6516293 bytes, 0 no buffer
+    Received 0 broadcasts (0 IP multicasts)
+    0 runts, 0 giants, 0 throttles 
+    0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+    0 watchdog, 0 multicast, 0 pause input
+    41188 packets output, 17832827 bytes, 0 underruns
+    Output 0 broadcasts (0 IP multicasts)
+    0 output errors, 0 collisions, 0 interface resets
+    0 unknown protocol drops
+    0 babbles, 0 late collision, 0 deferred
+    0 lost carrier, 0 no carrier, 0 pause output
+    0 output buffer failures, 0 output buffers swapped out
+```
+![GigabitEthernet1_output](/assets/img/favicons/output_ge1.jpg)
 
 Analyze the output above to understand different types of data in python. `Description` of the interface is __MANAGEMENT INTERFACE - DON'T TOUCH ME__ which is a __String__ data type, sequence of characters which forms a word or sentence, simply text is string enclosed between `''` or `""`  Now check the speed above in Mbps, It says __1000__, this __Integer__ data type, they are simply numerics or numbers. We can also have __True__ or __False__ as values which are called __Boolean__ data type.  We have __Float__ data type for decimal point numbers like T1 circuit speed in Mbps __1.544__
 
 Run the code blocks below to understand. `type()` function can be used to know the data type of the data in the object.
 
-
 ```python
 description = "MANAGEMENT INTERFACE - DON'T TOUCH ME"
 print(type(website))
 ```
-
-    <class 'str'>
-    
+output:
+```
+<class 'str'>
+```
 
 Here `description` is the label of the memory location, called __Object__ which stores the assigned value in python object oriented programming. We are printing out type of the data in the `description` object. Object names can be any word except some reserved words in python so description object type is 'String'
 
 lets explore other types too in the same way.
 
-
 ```python
 speed = 1000
 print(type(speed))
 ```
-
-    <class 'int'>
-    
-
+output:
+```
+<class 'int'>
+```
 
 ```python
 is_status_up = True
 print(type(is_status_up))
 ```
-
-    <class 'bool'>
-    
-
-
+output:
+```
+<class 'bool'>
+```
 ```python
 t1_speed = 1.544
 print(type(t1_speed))
 ```
-
-    <class 'float'>
-    
-
+output:
+```
+<class 'float'>
+``` 
 Mostly, In network automation we deal with string data type. So lets learn some string manupulations and use them to get our job done.
 
 Indexing of the string starts from __0__ to __n-1__ where __n__ is the length of the given string. lets manipulte string 'tales of technology'
-
 
 ```python
 website_name = 'tales of technology'
 print(len(website_name))
 ```
-
-    19
-    
-
+output:
+```
+19
+```
 `len()` function outputs the length of the string
 
 So as observed indexing ends at **18** because it started from **0**
 
 Now lets print out only 'tales' from the string
 
-![image.png](attachment:d0e5dd29-fcb1-4c23-90d1-97efaf5b53f5.png)
+![website_indices.jpg](/assets/img/favicons/website_indices.jpg)
 
 
 ```python
 print(website_name[0:5])
 ```
-
-    tales
-    
+output:
+```
+tales
+```    
 
 To split the string by white space run `website_name.split(" ")`
-![image.png](attachment:24014ca9-f02b-4525-bb29-052623ae341.png)
-
+![string_chunks.jpg](/assets/img/favicons/string_chunks.jpg)
 
 ```python
 print(website_name.split(" "))
 ```
-
-    ['tales', 'of', 'technology']
-    
+output:
+```
+['tales', 'of', 'technology']
+```    
 
 Wow! It did created a __list__ of splitted strings, `list` is a collection of data enclosed between `[]` and seperated by `,`. Even list follows the same indexing which starts from __0__ and ends by __length-1__. 
 
@@ -214,20 +214,14 @@ print(type(spiltted_website_name))
 
 spiltted_website_name[0]
 ```
-
-    ['tales', 'of', 'technology']
-    <class 'list'>
-    
-
-
-
-
-    'tales'
-
-
+output:
+```
+['tales', 'of', 'technology']
+<class 'list'>
+'tales'
+```
 
 Good! now lets store the output of the `show interface GigabitEthernet1` in an object and manipulate the string to get only the __description__ of the interface
-
 
 ```python
 from netmiko import ConnectHandler
@@ -235,72 +229,70 @@ sandbox_connection = ConnectHandler(device_type = "cisco_ios", host = "sandbox-i
 output_string = sandbox_connection.send_command("show interface GigabitEthernet1")
 print(output_string)
 ```
-
-    GigabitEthernet1 is up, line protocol is up 
-      Hardware is CSR vNIC, address is 0050.56bf.78ac (bia 0050.56bf.78ac)
-      Description: MANAGEMENT INTERFACE - DON'T TOUCH ME
-      Internet address is 10.10.20.48/24
-      MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec, 
-         reliability 255/255, txload 1/255, rxload 1/255
-      Encapsulation ARPA, loopback not set
-      Keepalive set (10 sec)
-      Full Duplex, 1000Mbps, link type is auto, media type is Virtual
-      output flow-control is unsupported, input flow-control is unsupported
-      ARP type: ARPA, ARP Timeout 04:00:00
-      Last input 00:00:00, output 00:00:00, output hang never
-      Last clearing of "show interface" counters never
-      Input queue: 0/375/0/0 (size/max/drops/flushes); Total output drops: 22290
-      Queueing strategy: fifo
-      Output queue: 0/40 (size/max)
-      5 minute input rate 46000 bits/sec, 7 packets/sec
-      5 minute output rate 108000 bits/sec, 7 packets/sec
-         146129 packets input, 35964839 bytes, 0 no buffer
-         Received 0 broadcasts (0 IP multicasts)
-         0 runts, 0 giants, 0 throttles 
-         0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-         0 watchdog, 0 multicast, 0 pause input
-         130933 packets output, 90170802 bytes, 0 underruns
-         Output 0 broadcasts (0 IP multicasts)
-         0 output errors, 0 collisions, 0 interface resets
-         0 unknown protocol drops
-         0 babbles, 0 late collision, 0 deferred
-         0 lost carrier, 0 no carrier, 0 pause output
-         0 output buffer failures, 0 output buffers swapped out
-    
-
+output:
+```
+GigabitEthernet1 is up, line protocol is up 
+    Hardware is CSR vNIC, address is 0050.56bf.78ac (bia 0050.56bf.78ac)
+    Description: MANAGEMENT INTERFACE - DON'T TOUCH ME
+    Internet address is 10.10.20.48/24
+    MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec, 
+        reliability 255/255, txload 1/255, rxload 1/255
+    Encapsulation ARPA, loopback not set
+    Keepalive set (10 sec)
+    Full Duplex, 1000Mbps, link type is auto, media type is Virtual
+    output flow-control is unsupported, input flow-control is unsupported
+    ARP type: ARPA, ARP Timeout 04:00:00
+    Last input 00:00:00, output 00:00:00, output hang never
+    Last clearing of "show interface" counters never
+    Input queue: 0/375/0/0 (size/max/drops/flushes); Total output drops: 22290
+    Queueing strategy: fifo
+    Output queue: 0/40 (size/max)
+    5 minute input rate 46000 bits/sec, 7 packets/sec
+    5 minute output rate 108000 bits/sec, 7 packets/sec
+        146129 packets input, 35964839 bytes, 0 no buffer
+        Received 0 broadcasts (0 IP multicasts)
+        0 runts, 0 giants, 0 throttles 
+        0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+        0 watchdog, 0 multicast, 0 pause input
+        130933 packets output, 90170802 bytes, 0 underruns
+        Output 0 broadcasts (0 IP multicasts)
+        0 output errors, 0 collisions, 0 interface resets
+        0 unknown protocol drops
+        0 babbles, 0 late collision, 0 deferred
+        0 lost carrier, 0 no carrier, 0 pause output
+        0 output buffer failures, 0 output buffers swapped out
+```
 
 ```python
 print(type(output_string))
 ```
-
-    <class 'str'>
-    
-
+output:
+```
+<class 'str'>
+```
 To split the string by line we use `\n` which is the new line character present as a character in multiline strings
-
 
 ```python
 splitted_output = output_string.split("\n")
 print(splitted_output)
 ```
-
-    ['GigabitEthernet1 is up, line protocol is up ', '  Hardware is CSR vNIC, address is 0050.56bf.78ac (bia 0050.56bf.78ac)', "  Description: MANAGEMENT INTERFACE - DON'T TOUCH ME", '  Internet address is 10.10.20.48/24', '  MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec, ', '     reliability 255/255, txload 1/255, rxload 1/255', '  Encapsulation ARPA, loopback not set', '  Keepalive set (10 sec)', '  Full Duplex, 1000Mbps, link type is auto, media type is Virtual', '  output flow-control is unsupported, input flow-control is unsupported', '  ARP type: ARPA, ARP Timeout 04:00:00', '  Last input 00:00:00, output 00:00:00, output hang never', '  Last clearing of "show interface" counters never', '  Input queue: 0/375/0/0 (size/max/drops/flushes); Total output drops: 22290', '  Queueing strategy: fifo', '  Output queue: 0/40 (size/max)', '  5 minute input rate 46000 bits/sec, 7 packets/sec', '  5 minute output rate 108000 bits/sec, 7 packets/sec', '     146129 packets input, 35964839 bytes, 0 no buffer', '     Received 0 broadcasts (0 IP multicasts)', '     0 runts, 0 giants, 0 throttles ', '     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored', '     0 watchdog, 0 multicast, 0 pause input', '     130933 packets output, 90170802 bytes, 0 underruns', '     Output 0 broadcasts (0 IP multicasts)', '     0 output errors, 0 collisions, 0 interface resets', '     0 unknown protocol drops', '     0 babbles, 0 late collision, 0 deferred', '     0 lost carrier, 0 no carrier, 0 pause output', '     0 output buffer failures, 0 output buffers swapped out']
-    
-
+output:
+```
+['GigabitEthernet1 is up, line protocol is up ', '  Hardware is CSR vNIC, address is 0050.56bf.78ac (bia 0050.56bf.78ac)', "  Description: MANAGEMENT INTERFACE - DON'T TOUCH ME", '  Internet address is 10.10.20.48/24', '  MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec, ', '     reliability 255/255, txload 1/255, rxload 1/255', '  Encapsulation ARPA, loopback not set', '  Keepalive set (10 sec)', '  Full Duplex, 1000Mbps, link type is auto, media type is Virtual', '  output flow-control is unsupported, input flow-control is unsupported', '  ARP type: ARPA, ARP Timeout 04:00:00', '  Last input 00:00:00, output 00:00:00, output hang never', '  Last clearing of "show interface" counters never', '  Input queue: 0/375/0/0 (size/max/drops/flushes); Total output drops: 22290', '  Queueing strategy: fifo', '  Output queue: 0/40 (size/max)', '  5 minute input rate 46000 bits/sec, 7 packets/sec', '  5 minute output rate 108000 bits/sec, 7 packets/sec', '     146129 packets input, 35964839 bytes, 0 no buffer', '     Received 0 broadcasts (0 IP multicasts)', '     0 runts, 0 giants, 0 throttles ', '     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored', '     0 watchdog, 0 multicast, 0 pause input', '     130933 packets output, 90170802 bytes, 0 underruns', '     Output 0 broadcasts (0 IP multicasts)', '     0 output errors, 0 collisions, 0 interface resets', '     0 unknown protocol drops', '     0 babbles, 0 late collision, 0 deferred', '     0 lost carrier, 0 no carrier, 0 pause output', '     0 output buffer failures, 0 output buffers swapped out']
+```
 Now description is present in the third line so its index is 2 as per the python indices concept. lets filter out only the description line 
-![image.png](attachment:d9defae0-7b92-441d-a55b-256d8dbb6bc0.png)
-
+![list_of_ge1_output.png](/assets/img/favicons/list_of_ge1_output.png)
 
 ```python
 desc_line = splitted_output[2]
 print(desc_line)
 print(type(desc_line))
 ```
-
-      Description: MANAGEMENT INTERFACE - DON'T TOUCH ME
-    <class 'str'>
-    
-
+output:
+```
+Description: MANAGEMENT INTERFACE - DON'T TOUCH ME
+<class 'str'>
+```
 Finally, We are able to retrive only the description of an interface by filtering out all the other output
 In this path, We learnt the following
 
@@ -342,6 +334,5 @@ Follow us on [tales of technology](talesoftechnology.github.io) for more such ar
 our twitter profile - [toftechnology](https://twitter.com/toftechnology)
 
 My Linkedin profile to follow - [Herald's linkedin](www.linkedin.com/in/herald126)
-
 
 please comment below for any queries or feedback
