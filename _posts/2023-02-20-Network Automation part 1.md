@@ -306,8 +306,8 @@ Hope you enjoyed reading the article, My main goal is involve you while reading 
 
 To learn more about python and netmiko, please visit their official websites
 
-- python - https://docs.python.org/3/tutorial/index.html
-- netmiko - https://pyneng.readthedocs.io/en/latest/book/18_ssh_telnet/netmiko.html
+- python - [tutorial](https://docs.python.org/3/tutorial/index.html)
+- netmiko - [netmiko docs](https://pyneng.readthedocs.io/en/latest/book/18_ssh_telnet/netmiko.html)
 
 Thank you for reading. Don't forget to complete the challenge below and let me know in the comments below.
 
