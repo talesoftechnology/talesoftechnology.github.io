@@ -18,7 +18,7 @@ If you don't have it already please install python in your local computer here -
 Once the python is installed, Open the command prompt and run command `python` you should see the python version and prompt like this `>>>` confirming successful python installation. 
 please install jupyter lab as well by running the command `pip install jupyterlab` from command prompt
 
-Download the jupyter notebook here - to run the code and follow this guided article (Make sure to follow the sequence while running the blocks of code in the notebook, some blocks don't work with out running the previous block)
+[Download the jupyter notebook here](https://drive.google.com/uc?export=download&id=1GBNnzaINTZIs_35zN8lPurU1NmAJs06w) to run the code and follow this guided article (Make sure to follow the sequence while running the blocks of code in the notebook, some blocks don't work with out running the previous block)
 
 Real power of python comes from it's kind community, most of people in the community write the code and make it freely available to use and reap the benefits. In the same way a smart guy named __'Kirk Byers'__ went through the hard way and wrote a python module named __'netmiko'__ which is a collection of python scripts useful to handle network operations and configurations. 
 
