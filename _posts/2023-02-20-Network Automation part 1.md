@@ -3,7 +3,7 @@ title: Network Automation - How it all started
 date: 2023-02-20
 categories: [networkautomation, python, herald]
 tags: [netdevops,python,netmiko,networkautomation]
-author: Herald np
+author: herald
 ---
 ## lighter way of learning python network automation
 
