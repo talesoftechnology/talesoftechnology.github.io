@@ -329,7 +329,7 @@ For your reference, you can read on file handling in the python website [python 
 
 Thank you for reading. This is part 1 of Network Automation using python.More articles on same topic. Coming soon!
 
-Follow us on [tales of technology](talesoftechnology.github.io) for more such articles.
+Follow us on [tales of technology](https://talesoftechnology.github.io) for more such articles.
 
 our twitter profile - [toftechnology](https://twitter.com/toftechnology)
 
