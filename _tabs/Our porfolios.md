@@ -14,4 +14,3 @@ __Connect with us on Linkedin__
 __You can find our projects on our github, feel free to fork our projects__
 
 [Verlaine's Github](https://github.com/verlaine-muhungu) ---- [Herald's Github](https://github.com/heraldcod)
-__
