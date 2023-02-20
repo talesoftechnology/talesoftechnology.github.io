@@ -21,7 +21,7 @@ timezone: Asia/Kolkata
 
 title: Tales of technology                          # the main title
 
-tagline: Our blog website   # it will display as the sub-title
+tagline: Tech Tales   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Follow us for interesting technical content as stories decoding complex documentation
