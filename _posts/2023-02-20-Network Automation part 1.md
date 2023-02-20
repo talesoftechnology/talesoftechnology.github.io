@@ -333,6 +333,6 @@ Follow us on [tales of technology](talesoftechnology.github.io) for more such ar
 
 our twitter profile - [toftechnology](https://twitter.com/toftechnology)
 
-My Linkedin profile to follow - [Herald's linkedin](www.linkedin.com/in/herald126)
+My Linkedin profile to follow - [Herald's linkedin](www.linkedin.com/in/herald126/)
 
 please comment below for any queries or feedback
