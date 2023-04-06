@@ -77,7 +77,7 @@ Let's break down the OSI model! after memorizing different mnemonics will you be
 
 Let us deep dive into each layer and investigate packet
 
-**Dissecting an Ethernet Frame**
+#### **Dissecting an Ethernet Frame**
 
 ![w8](/assets/img/favicons/Wireshark8.png)
 
@@ -87,39 +87,39 @@ Wireshark captures the Ethernet frame
 
 ![w9](/assets/img/favicons/Wireshark9.png)
 
-- Destination - The Destination field contains the MAC address of the device that the Ethernet frame is being sent to.
-- Source - The Source field contains the MAC address of the device that sent the Ethernet frame
-- Type -The Type field indicates the type of protocol being carried in the payload of the Ethernet frame. For example, if the Type field is set to 0x0800, it means that the payload contains an IPv4 packet. Other common values for the Type field include 0x0806 for ARP packets and 0x86DD for IPv6 packets.
+- **Destination** - The Destination field contains the MAC address of the device that the Ethernet frame is being sent to.
+- **Source** - The Source field contains the MAC address of the device that sent the Ethernet frame
+- **Type** -The Type field indicates the type of protocol being carried in the payload of the Ethernet frame. For example, if the Type field is set to 0x0800, it means that the payload contains an IPv4 packet. Other common values for the Type field include 0x0806 for ARP packets and 0x86DD for IPv6 packets.
 
 ***\*\*** Note that the values in the Type field are typically represented in hexadecimal format\*\*\*
 
-**Dissecting an IP packet**
+#### **Dissecting an IP packet**
 
 ![w10](/assets/img/favicons/Wireshark10.png)
 
-- Version - gives you the internet protocol version as its name suggests
-- Header length - length of the IP header only
-- Differentiated services field - In this field, prioritization tags can be given for any important packets or traffic
-- Total length - packet length, including the header and payload
-- Identification - unique IP ID to track the packet
-- Flags - bits can be set for fragmentation of the packet
-- Time to live - Number of hop counts remained for the packet till it gets blackholed to avoid loops
-- Protocol - Specifies layer 5 protocol
-- Header checksum - Checksum to have a reliable transfer of the bits
-- Source and Destination IP addresses as names suggested
+- **Version** - gives you the internet protocol version as its name suggests
+- **Header length** - length of the IP header only
+- **Differentiated services field** - In this field, prioritization tags can be given for any important packets or traffic
+- **Total length** - packet length, including the header and payload
+- **Identification** - unique IP ID to track the packet
+- **Flags** - bits can be set for fragmentation of the packet
+- **Time to live** - Number of hop counts remained for the packet till it gets blackholed to avoid loops
+- **Protocol** - Specifies layer 5 protocol
+- **Header checksum** - Checksum to have a reliable transfer of the bits
+- **Source and Destination** IP addresses as names suggested
 
-**Dissecting TCP Segment**
+#### **Dissecting TCP Segment**
 
 ![w11](/assets/img/favicons/Wireshark11.png)
 
-- Source and destination port - used to identify the sending and receiving applications
-- Sequence number - a unique number to identify the order in it is intended to be received
-- Acknowledgment number - acknowledge the receipt of data from the other side
-- Flags - To control various aspects of the connection, URG (urgent data pointer field is valid), ACK (acknowledgment field is valid), PSH (push function), RST (reset connection), SYN (synchronize sequence numbers), and FIN (no more data from sender).
-- Window size - the amount of data that the sender is willing to receive before it expects an acknowledgment.
-- Checksum - used to ensure that the TCP segment has been transmitted without errors.
-- Urgent Pointer: This field is used to indicate the end of urgent data.
-- Options: TCP options can be included in the header to provide additional information about the connection. Common TCP options include Maximum Segment Size (MSS), Window Scaling, and Selective Acknowledgment (SACK) options.
+- **Source and destination port** - used to identify the sending and receiving applications
+- **Sequence number** - a unique number to identify the order in it is intended to be received
+- **Acknowledgment number** - acknowledge the receipt of data from the other side
+- **Flags** - To control various aspects of the connection, URG (urgent data pointer field is valid), ACK (acknowledgment field is valid), PSH (push function), RST (reset connection), SYN (synchronize sequence numbers), and FIN (no more data from sender).
+- **Window size** - the amount of data that the sender is willing to receive before it expects an acknowledgment.
+- **Checksum** - used to ensure that the TCP segment has been transmitted without errors.
+- **Urgent Pointer** - This field is used to indicate the end of urgent data.
+- **Options** - TCP options can be included in the header to provide additional information about the connection. Common TCP options include Maximum Segment Size (MSS), Window Scaling, and Selective Acknowledgment (SACK) options.
 
 ### **The Challenge:**
 
