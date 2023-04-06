@@ -38,7 +38,6 @@ The answer is " **Wireshark**", the most advanced packet sniffer in the world.
 
 It's an application, network analyzer that captures network packets from a network, such as from Lan, Wlan and there are endless possibilities to explore with the tool.
 
-![](RackMultipart20230406-1-x0seyy_html_9b276fbfb376f20d.png)
 
 In my demo I am configuring 2 routers Running Cisco IOS, the main goal is to show you how we can see the 7 OSI model layers in action, Sending a ping between the 2 devices.
 
@@ -48,17 +47,17 @@ In my demo I am configuring 2 routers Running Cisco IOS, the main goal is to sho
 | Sandbox | 192.168.1.10/24
  |
 
-![](RackMultipart20230406-1-x0seyy_html_ce7cb1dee03cb67b.png)
+
 
 in the prod router, I send a ping to **192.168.1.10** the Sandbox router.
 
 if the ping is successful to the **Sandbox** router we will see **!!!!!** (The exclamation mark),for network engineers, happiness is when they see it **!!!!!**
 
-![](RackMultipart20230406-1-x0seyy_html_ecd3b284247f3f7a.png)
+
 
 After sending the ping, if we observe the Wireshark traffic carefully
 
-![](RackMultipart20230406-1-x0seyy_html_eb2dd6f339f5d768.png)
+
 
 we see the **source IP address:** 192.168.1.1/24
 
@@ -68,25 +67,22 @@ we see the **source IP address:** 192.168.1.1/24
 
 For our short demo, in Wireshark we filter " **ICMP**" and " **Telne** t" to analyze the traffic
 
-![](RackMultipart20230406-1-x0seyy_html_b1a38cf8105ea56f.png)
-
-![](RackMultipart20230406-1-x0seyy_html_5cfa90fff809858f.jpg)
 
 Let's break down the OSI model! after memorizing different mnemonics will you be able to discover the layers with the sniffer?
 
-![](RackMultipart20230406-1-x0seyy_html_10c77fa1813f3bb.png)
+
 
 Let us deep dive into each layer and investigate packet
 
 1. **Dissecting an Ethernet Frame**
 
-![](RackMultipart20230406-1-x0seyy_html_5e31afc47e4d1d14.png)
+
 
 \*\* As the wireshark won't capture FCS it is omitted here
 
 Wireshark captures the Ethernet frame
 
-![](RackMultipart20230406-1-x0seyy_html_b5c80659a2ec3d70.png)
+
 
 - Destination - The Destination field contains the MAC address of the device that the Ethernet frame is being sent to.
 - Source - The Source field contains the MAC address of the device that sent the Ethernet frame
@@ -96,7 +92,7 @@ Wireshark captures the Ethernet frame
 
 1. **Dissecting an IP packet**
 
-![](RackMultipart20230406-1-x0seyy_html_762ca89a96808a31.png)
+
 
 - Version - gives you the internet protocol version as its name suggests
 - Header length - length of the IP header only
@@ -111,7 +107,7 @@ Wireshark captures the Ethernet frame
 
 1. **Dissecting TCP Segment**
 
-![](RackMultipart20230406-1-x0seyy_html_194132ff27cbb612.png)
+
 
 - Source and destination port - used to identify the sending and receiving applications
 - Sequence number - a unique number to identify the order in it is intended to be received
