@@ -1,14 +1,14 @@
 ---
-title: OSI layers and Wireshark - Practical way of understanding OSI model and its layers
+title: OSI layers and Wireshark
 date: 2023-04-06
 categories: [networking, CCNA, Wireshark, OSI]
 tags: [networking, CCNA, Wireshark, OSI]
-author: herald, verlaine
+author: verlaine
 ---
 
-**OSI layers and Wireshark - Practical way of understanding OSI model and its layers**
+## **Practical way of understanding OSI model and its layers**
 
-**The Tale:**
+### **The Tale:**
 
 In the early beginning of the internet, it was impossible for devices from different vendors to communicate with each other, back in the 1970s a framework was introduced in the networking industry to solve the problem " **The OSI MODEL**"
 
@@ -32,7 +32,7 @@ In the industry, we face different challenges, as soon as networks become comple
 
 Imagine you have a breakdown at work or home with your Lan, as an OSI model genius how to troubleshoot or analyze the network referring to the 7 layers?
 
-**The Path:**
+### **The Path:**
 
 The answer is " **Wireshark**", the most advanced packet sniffer in the world.
 
@@ -44,10 +44,7 @@ In my demo I am configuring 2 routers Running Cisco IOS, the main goal is to sho
 | **Routers hostname** | **IP address** |
 | --- | --- |
 | Prod | 192.168.1.1/24 |
-| Sandbox | 192.168.1.10/24
- |
-
-
+| Sandbox | 192.168.1.10/24 |
 
 in the prod router, I send a ping to **192.168.1.10** the Sandbox router.
 
@@ -74,9 +71,7 @@ Let's break down the OSI model! after memorizing different mnemonics will you be
 
 Let us deep dive into each layer and investigate packet
 
-1. **Dissecting an Ethernet Frame**
-
-
+**Dissecting an Ethernet Frame**
 
 \*\* As the wireshark won't capture FCS it is omitted here
 
@@ -90,7 +85,7 @@ Wireshark captures the Ethernet frame
 
 \ ***\*\*** Note that the values in the Type field are typically represented in hexadecimal format\*\*\*
 
-1. **Dissecting an IP packet**
+**Dissecting an IP packet**
 
 
 
@@ -105,7 +100,7 @@ Wireshark captures the Ethernet frame
 - Header checksum - Checksum to have a reliable transfer of the bits
 - Source and Destination IP addresses as names suggested
 
-1. **Dissecting TCP Segment**
+**Dissecting TCP Segment**
 
 
 
@@ -118,6 +113,6 @@ Wireshark captures the Ethernet frame
 - Urgent Pointer: This field is used to indicate the end of urgent data.
 - Options: TCP options can be included in the header to provide additional information about the connection. Common TCP options include Maximum Segment Size (MSS), Window Scaling, and Selective Acknowledgment (SACK) options.
 
-**The Challenge:**
+### **The Challenge:**
 
 It is simple, Fire up your Wireshark and dissect the traffic in your network and analyze all the fields at layers 2,3 and 4.
