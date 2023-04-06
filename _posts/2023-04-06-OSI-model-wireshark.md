@@ -38,7 +38,7 @@ The answer is " **Wireshark**", the most advanced packet sniffer in the world.
 
 It's an application, network analyzer that captures network packets from a network, such as from Lan, Wlan and there are endless possibilities to explore with the tool.
 
-![w1](\assets\img\favicons\Wireshaark1.png)
+![w1](\assets\img\favicons\Wireshark1.png)
 
 In my demo I am configuring 2 routers Running Cisco IOS, the main goal is to show you how we can see the 7 OSI model layers in action, Sending a ping between the 2 devices.
 
