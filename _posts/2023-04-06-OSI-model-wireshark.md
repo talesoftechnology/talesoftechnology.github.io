@@ -2,8 +2,8 @@
 title: OSI layers and Wireshark
 date: 2023-04-06
 categories: [networking, CCNA, Wireshark, OSI]
-tags: [networking, CCNA, Wireshark, OSI]
-author: verlaine
+tags: [networking, CCNA, Wireshark, OSI Model]
+author: verlaine & herald
 ---
 
 ## **Practical way of understanding OSI model and its layers**
@@ -38,6 +38,7 @@ The answer is " **Wireshark**", the most advanced packet sniffer in the world.
 
 It's an application, network analyzer that captures network packets from a network, such as from Lan, Wlan and there are endless possibilities to explore with the tool.
 
+![w1](\assets\img\favicons\Wireshaark1.png)
 
 In my demo I am configuring 2 routers Running Cisco IOS, the main goal is to show you how we can see the 7 OSI model layers in action, Sending a ping between the 2 devices.
 
@@ -46,15 +47,17 @@ In my demo I am configuring 2 routers Running Cisco IOS, the main goal is to sho
 | Prod | 192.168.1.1/24 |
 | Sandbox | 192.168.1.10/24 |
 
+![w2](\assets\img\favicons\Wireshark2.png)
+
 in the prod router, I send a ping to **192.168.1.10** the Sandbox router.
 
 if the ping is successful to the **Sandbox** router we will see **!!!!!** (The exclamation mark),for network engineers, happiness is when they see it **!!!!!**
 
-
+![w3](\assets\img\favicons\Wireshark3.png)
 
 After sending the ping, if we observe the Wireshark traffic carefully
 
-
+![w4](\assets\img\favicons\Wireshark4.png)
 
 we see the **source IP address:** 192.168.1.1/24
 
@@ -64,30 +67,35 @@ we see the **source IP address:** 192.168.1.1/24
 
 For our short demo, in Wireshark we filter " **ICMP**" and " **Telne** t" to analyze the traffic
 
+![w5](\assets\img\favicons\Wireshark5.png)
+
+![w6](\assets\img\favicons\Wireshark6.png)
 
 Let's break down the OSI model! after memorizing different mnemonics will you be able to discover the layers with the sniffer?
 
-
+![w7](\assets\img\favicons\Wireshark7.png)
 
 Let us deep dive into each layer and investigate packet
 
 **Dissecting an Ethernet Frame**
 
+![w8](\assets\img\favicons\Wireshark8.png)
+
 \*\* As the wireshark won't capture FCS it is omitted here
 
 Wireshark captures the Ethernet frame
 
-
+![w9](\assets\img\favicons\Wireshark9.png)
 
 - Destination - The Destination field contains the MAC address of the device that the Ethernet frame is being sent to.
 - Source - The Source field contains the MAC address of the device that sent the Ethernet frame
 - Type -The Type field indicates the type of protocol being carried in the payload of the Ethernet frame. For example, if the Type field is set to 0x0800, it means that the payload contains an IPv4 packet. Other common values for the Type field include 0x0806 for ARP packets and 0x86DD for IPv6 packets.
 
-\ ***\*\*** Note that the values in the Type field are typically represented in hexadecimal format\*\*\*
+***\*\*** Note that the values in the Type field are typically represented in hexadecimal format\*\*\*
 
 **Dissecting an IP packet**
 
-
+![w10](\assets\img\favicons\Wireshark10.png)
 
 - Version - gives you the internet protocol version as its name suggests
 - Header length - length of the IP header only
@@ -102,7 +110,7 @@ Wireshark captures the Ethernet frame
 
 **Dissecting TCP Segment**
 
-
+![w11](\assets\img\favicons\Wireshark11.png)
 
 - Source and destination port - used to identify the sending and receiving applications
 - Sequence number - a unique number to identify the order in it is intended to be received
@@ -116,3 +124,18 @@ Wireshark captures the Ethernet frame
 ### **The Challenge:**
 
 It is simple, Fire up your Wireshark and dissect the traffic in your network and analyze all the fields at layers 2,3 and 4.
+
+Thank you for reading. More articles Coming soon!
+
+Follow us on [tales of technology](https://talesoftechnology.github.io) for more such articles.
+
+our twitter profile - [toftechnology](https://twitter.com/toftechnology)
+
+Our Linkedin profile to follow 
+
+[Herald's linkedin](https://linkedin.com/in/herald126/)
+
+[Verlaine's linkedin](https://www.linkedin.com/in/verlaine-j-muhungu-363507b2/)
+
+
+please comment below for any queries or feedback
