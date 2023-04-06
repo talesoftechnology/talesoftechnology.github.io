@@ -69,7 +69,7 @@ For our short demo, in Wireshark we filter " **ICMP**" and " **Telne** t" to ana
 
 ![w5](/assets/img/favicons/Wireshark5.png)
 
-![w6](/assets/img/favicons/Wireshark6.png)
+![w6](/assets/img/favicons/Wireshark6.jpg)
 
 Let's break down the OSI model! after memorizing different mnemonics will you be able to discover the layers with the sniffer?
 
