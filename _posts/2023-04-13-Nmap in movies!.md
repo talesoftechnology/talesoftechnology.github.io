@@ -8,6 +8,8 @@ author: verlaine
 
 ## **what’s the difference between movies and our daily life as engineers ?**
 
+### The Tale:
+
 They say movies are not real life, it's just a way to create more illusions in our minds!
 
 the answer is just relative, movies are great a way to inspire us to learn and innovate for the present and future.
@@ -19,6 +21,8 @@ Mr robot, Chloe O'Brien, how many people inspired us to become computer nerds th
 Nmap is seen in different successful movies like **Ocean 8** , **the matrix reloaded** , **die-hard 4** and there's a great tribe of curious learners after watching some footage!
 
 are you one of them?
+
+### The Path:
 
 Let's discover together!
 
@@ -73,6 +77,8 @@ let's scan [www.nasa.gov](http://www.nasa.gov/) to get some details about the sc
 in the output, we can see **Android** running.
 
 Now you have some basic knowledge of nmap, open your shell and go further by testing more commands
+
+### The Challenge:
 
 Open your shell and run these 5 commands to discover **nmap** 
 
