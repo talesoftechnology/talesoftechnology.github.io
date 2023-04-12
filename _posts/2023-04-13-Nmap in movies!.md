@@ -74,9 +74,18 @@ in the output, we can see **Android** running.
 
 Now you have some basic knowledge of nmap, open your shell and go further by testing more commands
 
+Open your shell and run these 5 commands to discover **nmap** 
+
+- **sudo apt install nmap** to install the utility in your shell 
+- **nmap** by targeting an IP address in your local network 
+- **nmap -vv** followed by a website of your choice to get some details 
+- **nmap -A** to detect the operating system of a target machine 
+- **nmap -Pn --script vuln** followed by the ip address of your target PC to discover vulnerabilities 
+
+
 To learn more: - [Cisco Learning Network](https://learningnetwork.cisco.com/s/blogs/a0D6e00000sRFJIEA4/my-first-common-vulnerability-exposure-cve-a-devnet-journey-part-1)
 
 - [Nmap: the Network Mapper - Free Security Scanner](https://nmap.org/)
 - [Movies Featuring the Nmap Security Scanner](https://nmap.org/movies/)
 
-Happy learning!
+Happy learning and stay curious !
