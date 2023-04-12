@@ -8,7 +8,7 @@ author: verlaine
 
 ## **what’s the difference between movies and our daily life as engineers ?**
 
-### The Tale:
+### __The Tale:__
 
 They say movies are not real life, it's just a way to create more illusions in our minds!
 
@@ -22,7 +22,7 @@ Nmap is seen in different successful movies like **Ocean 8** , **the matrix relo
 
 are you one of them?
 
-### The Path:
+### __The Path:__
 
 Let's discover together!
 
@@ -78,7 +78,7 @@ in the output, we can see **Android** running.
 
 Now you have some basic knowledge of nmap, open your shell and go further by testing more commands
 
-### The Challenge:
+### __The Challenge:__
 
 Open your shell and run these 5 commands to discover **nmap** 
 
