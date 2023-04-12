@@ -1,8 +1,8 @@
 ---
 title: Nmap in the movies !
 date: 2023-04-12
-categories: [networking, nmap]
-tags: [networking, nmap]
+categories: [networking, network security]
+tags: [networking, nmap, hacking]
 author: verlaine
 ---
 
