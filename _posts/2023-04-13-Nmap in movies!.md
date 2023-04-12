@@ -44,29 +44,29 @@ in our short demo, we use Nmap on Ubuntu our favorite Linux distribution, you ca
 
 if Nmap is already installed on your Ubuntu you can skip the installation, here we show the installation if it's not done yet on your computer.
 
-![nmap1](C:/Users/Hudso/talesoftechnology.github.io/assets/img/favicons/nmap1.jpg)
+![nmap1](/assets/img/favicons/nmap1.jpg)
 
 **sudo apt install nmap** : to install you need a higher privilege as root "sudo"
 
 once the utility is installed run "nmap" in the shell, the version will be displayed, and additional arguments to add to the utility.
 
-![nmap2](C:/Users/Hudso/talesoftechnology.github.io/assets/img/favicons/nmap2.jpg)
+![nmap2](/assets/img/favicons/nmap2.jpg)
 
 **nmap** : displays the version, and options to make the most of the utility.
 
 let's scan a host with an IP address of **172.20.120.174** to see if it's active
 
-![nmap3](C:/Users/Hudso/talesoftechnology.github.io/assets/img/favicons/nmap3.jpg)
+![nmap3](/assets/img/favicons/nmap3.jpg)
 
 the result shows an active host.
 
 let's scan [www.nasa.gov](http://www.nasa.gov/) to get some details about the scan
 
-![nmap4](C:/Users/Hudso/talesoftechnology.github.io/assets/img/favicons/nmap4.jpg)
+![nmap4](/assets/img/favicons/nmap4.jpg)
 
 **nmap –vv** : gives more details about the scan,the output shows the time a ping was initiated, the website, number of ports scan.
 
-![nmap5](C:/Users/Hudso/talesoftechnology.github.io/assets/img/favicons/nmap5.jpg)
+![nmap5](/assets/img/favicons/nmap5.jpg)
 
 **nmap -A** : to enable operating system detection, version detection and script scanning.
 
