@@ -313,7 +313,7 @@ Thank you for reading. Don't forget to complete the challenge below and let me k
 
 ### <ins> The challenge </ins>
 
-Using previous learned concepts and the below hints. Do the following
+Using previously learned concepts and the below hints. Do the following
 
 1. Connect to the sandbox using ConnectHandler
 2. Get the whole running configuration as by sending the suitable cisco IOS command
