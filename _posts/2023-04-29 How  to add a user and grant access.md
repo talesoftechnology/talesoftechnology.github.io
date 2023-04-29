@@ -29,7 +29,7 @@ we need a root privilege to add an account and it’s named **“devops_sandbox�
 ![LINUX ARTS](https://user-images.githubusercontent.com/125142880/235300059-25e4935f-40c6-4fbd-a52b-1233196f8cb6.png) 
 
 sudo adduser devops_sandbox 
-**sudo** : means super user do, the command helps us to have the root privilege (higher) and we need that to add an account.
+**sudo** : means super user do the command helps us to have the root privilege (higher) and we need that to add an account.
 
 **adduser** : the command helps us to add a user on Linux
 
