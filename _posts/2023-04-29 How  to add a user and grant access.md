@@ -1,6 +1,6 @@
 ---
 title: How to add a user on linux (ubuntu) and grant root privilege
-date: 2023-04-29
+date: 2023-04-28
 categories: [LINUX ,OPEN SOURCE, OS]
 tags: [LINUX, UBUNTU, OPEN SOURCE]
 author: verlaine
