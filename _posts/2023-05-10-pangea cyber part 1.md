@@ -18,7 +18,7 @@ thwarting the bad guys takes time and money, also a dedicated team of skilled pr
 
 During my tech journey with Cisco Devnet, I had the opportunity to learn with the **[secure code warrior tournaments and coding competition**](https://www.securecodewarrior.com/products/tournaments)** twice, the challenge gives developers the opportunity to discover vulnerabilities in different code challenges, once a vulnerability is found another stage is unlocked.
 
-![](/assets\img\favicons\pc1.png)
+![pc1](/assets/img/favicons/pc1.png)
 
 The experience showed me that without proper secure coding practices, every app shipped with vulnerabilities puts the users' privacy and infrastructures at risk.
 
