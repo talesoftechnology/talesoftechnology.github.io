@@ -8,15 +8,13 @@ author: verlaine
 
 ### **The Tale:**  
 
-**Pangea Cyber a Spaas for developersPart 1**
-
 Will all the continents reunite in 2023? If you are a bibliophile chances are you know Pangea as a supercontinent that incorporated all the landmasses on earth as one continent 200 to 300 million years ago, just a bit of history in a nutshell.
 
 Let’s talk coding now,writing clean code is not as easy as we always think, every developer can build an app, but few can deliver secure solutions protecting the user’s privacy daily with different attacks from hackers.
 
 thwarting the bad guys takes time and money, also a dedicated team of skilled professionals to secure apps and infrastructures.
 
-During my tech journey with Cisco Devnet, I had the opportunity to learn with the **[secure code warrior tournaments and coding competition**](https://www.securecodewarrior.com/products/tournaments)** twice, the challenge gives developers the opportunity to discover vulnerabilities in different code challenges, once a vulnerability is found another stage is unlocked.
+During my tech journey with Cisco Devnet, I had the opportunity to learn with the [**secure code warrior tournaments and coding competition**](https://www.securecodewarrior.com/products/tournaments) twice, the challenge gives developers the opportunity to discover vulnerabilities in different code challenges, once a vulnerability is found another stage is unlocked.
 
 ![pc1](/assets/img/favicons/pc1.png)
 
@@ -30,13 +28,15 @@ The good news is Pangea Cyber as a Spaas comes to the rescue to help developers 
 
 you don’t have to be a cybersecurity expert to use Pangea APIs!
 
-200 to 300 million years ago Pangea as a supercontinent incorporated all the landmasses on earth as one continent,2023 Pangea cyber as a Spaas incorporate a set of world-class APIs and reuniting all the developers for a safer cyber world by integrating the Apis into their Apps.
+200 to 300 million years ago Pangea as a supercontinent incorporated all the landmasses on earth as one continent, 2023 Pangea cyber as a Spaas incorporate a set of world-class APIs and reuniting all the developers for a safer cyber world by integrating the Apis into their Apps.
 
 **What is Pangea Cyber?**
 
+### **The Path:**
+
 Pangea is a security platform as a service(**SPass**) that delivers comprehensive security functions which app developers can leverage with a simple call to Pangea’s APIs.
 
-it offers foundational security services such as:
+It offers foundational security services such as:
 
 - *PII redaction*
 - *Embargo*
@@ -119,7 +119,7 @@ after hiding the PII it’s impossible to read sensitive information such as ema
 
 Pangea did it!
 
-**The excitement**
+### **The excitement:**
 
 security remains a big concern in our digital society, Pangea is the bridge between developers and security services for a safer world.
 
@@ -127,7 +127,7 @@ it’s a great opportunity for developers even with fewer security skills to sec
 
 I wanted to showcase that Pangea is precious for developers, this article is short and I hope you wanted to discover more things with my demo.
 
-be patient i have a surprise for you for the second part, the onboarding experience was worth testing.
+Be patient i have a surprise for you for the second part, the onboarding experience was worth testing.
 
 The documentation is top-notch, clear, and more things to discover, everything around Pangea is not difficult to use, from the console to the docs.
 
