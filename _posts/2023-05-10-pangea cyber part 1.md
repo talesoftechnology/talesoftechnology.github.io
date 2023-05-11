@@ -49,11 +49,11 @@ to discover the world-class platform: <https://pangea.cloud>
 
 **First hands-on experience with the platform**
 
-![](Aspose.Words.9255fa55-4157-4dbf-a41b-d16c10808450.002.jpeg)
+![]()
 
 Here is the landing page with insightful information for developers. By clicking in the upper corner you can log in if you have an account and signup if it’s not done yet.
 
-![](Aspose.Words.9255fa55-4157-4dbf-a41b-d16c10808450.003.jpeg)
+![]()
 
 Once logged in, Pangea shows a console and convivial interface to see what happens in the backend, the number of services activated and the experience is worth testing.
 
@@ -75,19 +75,19 @@ in this short demo, I am using:
 
 to run the sample, i set environment variables.
 
-![](Aspose.Words.9255fa55-4157-4dbf-a41b-d16c10808450.004.jpeg)
+![]()
 
 the domain and token are exported,Pangea uses **aws** and **GCP** to maximize availability and minimize latency around different regions around the world.
 
-![](Aspose.Words.9255fa55-4157-4dbf-a41b-d16c10808450.005.jpeg)
+![]()
 
 I clone the git repository with the sample app.
 
-![](Aspose.Words.9255fa55-4157-4dbf-a41b-d16c10808450.006.jpeg)
+![]()
 
 i install the SDK to run the sample app.
 
-![](Aspose.Words.9255fa55-4157-4dbf-a41b-d16c10808450.007.jpeg)
+![]()
 
 After running the sample app, the redact service is able to recognize the **PII** (personally identifiable information), in the output the PII is the phone Number.
 
@@ -95,7 +95,7 @@ How to hide such information?
 
 **Customs rules from the console**
 
-![](Aspose.Words.9255fa55-4157-4dbf-a41b-d16c10808450.008.jpeg)
+![]()
 
 With the sample app, I was able to see how the redact service detects the PII in the api request.
 
@@ -103,7 +103,7 @@ what if I want to write my own rules to detect and hide information such as Emai
 
 The redact service gives available options through the PII section
 
-![](Aspose.Words.9255fa55-4157-4dbf-a41b-d16c10808450.009.jpeg)
+![]()
 
 let’s choose all the rules from the PII section and write a test like :
 
@@ -113,7 +113,7 @@ let’s choose all the rules from the PII section and write a test like :
 
 with the PII information section, I have the possibility to choose to display my data with a mask or partial, displayed with \*\*\*.
 
-![](Aspose.Words.9255fa55-4157-4dbf-a41b-d16c10808450.010.jpeg)
+![]()
 
 after hiding the PII it’s impossible to read sensitive information such as email, phone number, and location.
 
