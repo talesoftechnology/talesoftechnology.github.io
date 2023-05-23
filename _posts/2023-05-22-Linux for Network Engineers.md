@@ -1,5 +1,5 @@
 ---
-title: Linux for Network Engineer
+title: Linux for Network Engineers
 date: 2023-05-22
 categories: [networking, DevOps, Linux]
 tags: [networking, devops, Linux]
@@ -37,17 +37,23 @@ Displays the distribution name, and version, in a shorter format compared to the
 
 ![](/assets/img/favicons/linux2.jpg)
 
-cat /etc/services: displays network services mapped to their ports, can help network engineers and developers to learn and discover services and ports. sometimes you need a cheat sheet online to learn, run the command in the shell and you have everything!
+__cat /etc/services:__
+
+Displays network services mapped to their ports, can help network engineers and developers to learn and discover services and ports. sometimes you need a cheat sheet online to learn, run the command in the shell and you have everything!
 
 ![](/assets/img/favicons/linux3.jpg)
 
-cat /etc/passwd: displays the content of the etc/passwd file, it describes user login accounts for the system.
+__cat /etc/passwd:__
+
+Displays the content of the etc/passwd file, it describes user login accounts for the system.
 
 The command can be run without root access,network engineers and developers can use that to verify users in a company who shared different groups, a great way to dig in search of some information.
 
 ![](/assets/img/favicons/linux4.jpg)
 
-cat /etc/shadow: displays the content of the shadow file password, it contains the user's login information such as encrypted passwords, and requires root access to modify anything related to users. Only experienced network engineers or developers can modify and access the shadow file. 
+__cat /etc/shadow:__
+
+Displays the content of the shadow file password, it contains the user's login information such as encrypted passwords, and requires root access to modify anything related to users. Only experienced network engineers or developers can modify and access the shadow file. 
 
 Once an authorized user accesses the file it may compromise different users' security,by accessing the encrypted passwords a user with a bad intention can use tools to decrypt 
 
