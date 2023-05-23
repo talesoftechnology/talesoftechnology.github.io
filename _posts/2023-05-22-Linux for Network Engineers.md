@@ -51,7 +51,7 @@ cat /etc/shadow: displays the content of the shadow file password, it contains t
 
 Once an authorized user accesses the file it may compromise different users' security,by accessing the encrypted passwords a user with a bad intention can use tools to decrypt 
 
-![](/assets/img/favicons/5.jpg)
+![](/assets/img/favicons/linux5.jpg)
 
 Learning linux is paramount to make a difference in the industry,use it for a good purpose and a safer internet not to destroy people's privacy. There are many laws depending of different countries,use at your own risk all the tools we have with linux,for your research and awareness. There are many hackers in jail right now !
 
